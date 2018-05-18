@@ -16,15 +16,36 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  
+  <style type="text/css">
+    #overlay1 {
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    top: 0; 
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: linear-gradient(rgba(215, 141, 247, 0.5), rgba(255, 183, 184, 0.5));
+		}
+		#overlay2 {
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    top: 0; 
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: rgba(0, 0, 0, 0.45);
+		}
+		#container-top-padding {
+	    padding-top: 12em;
+		}
+  </style>
   
   
 </head>
 <body>
   <section class="menu cid-qSkaJay3J2" once="menu" id="menu2-m">
-
-    
-
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -52,21 +73,21 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="about.html">
-                        ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="#">
-                        REGISTER</a>
-                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">SCHEDULE</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">SPONSORS</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">FAQ</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">CONTACT US</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#"></a></li></ul>
-            
+                  <a class="nav-link link text-white display-4" href="#">
+                      ABOUT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link link text-white display-4" href="#">
+                      REGISTER</a>
+              </li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">SCHEDULE</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">SPONSORS</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">FAQ</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">CONTACT US</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#"></a></li></ul>
         </div>
     </nav>
 </section>
 
-<section class="engine"><a href="#"></a></section><section class="cid-qSkbn8Ed26 mbr-fullscreen mbr-parallax-background" id="header2-n">
-
-    <div class="container-fluid">
+<section class="cid-qSkbn8Ed26 mbr-fullscreen mbr-parallax-background" id="header2-n" >
+<div id="overlay1">
+	<div id="overlay2">
+    <div class="container-fluid" id="container-top-padding">
         <div class="row justify-content-md-left">
           <div class="col-md-1"></div>
             <div class="mbr-white col-md-10">
@@ -77,7 +98,7 @@
                 <span style="font-weight: normal;"><h3>12-14th AUGUST</h3></span>
                 <div class="mbr-section-btn"><p class="btn btn-sm btn-white" style="border-radius: 50px;padding: 0.2rem 5rem;ma;margin: 0.5rem 1rem 2rem 0.5rem;"></p>
                 <div class="mbr-section-btn"><a class="btn btn-md btn-white display-4" href="#">SUBMIT PROPOSAL</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="#">BUY TICKETS</a></div>
+                    <a class="btn btn-md btn-white-outline display-4" href="#">BUT TICKETS</a></div>
             </div>
         </div>
     </div>
@@ -86,19 +107,22 @@
             <i class="mbri-down mbr-iconfont"></i>
         </a>
     </div>
+	</div>
+</div>
 </section>
 
-<footer id="svg-landing-image" style="background: url(assets/images/landing_svg.svg);
-  background-position: right bottom;
-  opacity : 1;
-  height: 45%;
-  width: 33%;
-  position : absolute;
-  background-repeat: no-repeat;
-  right: 0px;
-  bottom: 0px;
-  z-index: 5000;
-  filter: alpha(opacity=25) progid:DXImageTransform.Microsoft.Alpha(opacity=25);"></footer>
+	<footer id="svg-landing-image" style="background: url(assets/images/landing_svg.svg);
+	  background-position: right bottom;
+	  opacity : 1;
+	  height: 45%;
+	  width: 33%;
+	  position : absolute;
+	  background-repeat: no-repeat;
+	  right: 0px;
+	  bottom: 0px;
+	  z-index: 5000;
+	  filter: alpha(opacity=25) progid:DXImageTransform.Microsoft.Alpha(opacity=25);">
+  </footer>
 
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
@@ -110,7 +134,6 @@
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  
   
 </body>
 </html>
