@@ -18,7 +18,29 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
+  <style type="text/css">
+    .btn-others {
+      border-radius: 3em;
+      border-color: white;
+      color: black;
+      background-image: linear-gradient(to bottom, transparent 50%,  black 50%);
+      background-position: 0% 0%;
+      background-size: 210%;
+      transition: background 150ms ease-in-out, color 150ms ease-in-out;
+      }
+      .btn-others:hover {
+      color: #fff;
+      background-position: 0 100%;
+    }
+
+    .btn-about {
+      border-radius: 3em;
+      border-color: white;
+      color: white;
+      background: linear-gradient(to right, steelblue , skyblue);
+    }
+
+  </style>
   
 </head>
 <body>
@@ -37,22 +59,20 @@
         </button>
         <div class="menu-logo">
             <div class="navbar-brand">
-                
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobirise.com">
-                        SDC'18</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://geekhaven.github.io/IIITA-DevConf-Website-2018-19/" style="font-size:150%;">SDC'18</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-black display-4" href="https://mobirise.com"></a>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-warning display-4" href="tel:+1-234-567-8901">
-                    
-                    ABOUT</a> <a class="btn btn-sm btn-primary-outline display-4" href="tel:+1-234-567-8901">REGISTER</a> <a class="btn btn-sm btn-primary-outline display-4" href="tel:+1-234-567-8901">
-                    
-                    SCHEDULE</a> <a class="btn btn-sm btn-primary-outline display-4" href="tel:+1-234-567-8901">SPONSORS</a> <a class="btn btn-sm btn-primary-outline display-4" href="tel:+1-234-567-8901">FAQ</a> <a class="btn btn-sm btn-primary-outline display-4" href="tel:+1-234-567-8901">
-                    
-                    CONTACT US</a></div>
+            <div class="navbar-buttons mbr-section-btn">
+              <a class="btn btn-about" href="#">ABOUT</a> 
+              <a class="btn btn-others" href="https://geekhaven.github.io/IIITA-DevConf-Website-2018-19/register.html">REGISTER</a> 
+              <a class="btn btn-others" href="https://geekhaven.github.io/IIITA-DevConf-Website-2018-19/schedule.html">SCHEDULE</a>
+              <a class="btn btn-others" href="https://geekhaven.github.io/IIITA-DevConf-Website-2018-19/sponsors.html">SPONSORS</a>
+              <a class="btn btn-others" href="https://geekhaven.github.io/IIITA-DevConf-Website-2018-19/faq.html">FAQ</a>
+              <a class="btn btn-others" href="https://geekhaven.github.io/IIITA-DevConf-Website-2018-19/contactus.html">CONTACT US</a>
+            </div>
         </div>
     </nav>
 </section>
