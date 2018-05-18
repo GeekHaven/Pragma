@@ -535,11 +535,7 @@ a.text-black:focus {
 .mbr-section-btn a.btn:not(.btn-form):focus {
   box-shadow: none !important;
 }
-.mbr-section-btn a.btn:not(.btn-form):hover,
-.mbr-section-btn a.btn:not(.btn-form):focus {
-  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
-  -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
-}
+
 .mbr-gallery-filter li a {
   border-radius: 100px !important;
 }
@@ -548,9 +544,7 @@ a.text-black:focus {
   border-color: #ffffff;
   color: #8c8c8c;
 }
-.mbr-gallery-filter li.active .btn:focus {
-  box-shadow: none;
-}
+
 .nav-tabs .nav-link {
   border-radius: 100px !important;
 }
@@ -714,12 +708,7 @@ pre {
 .mbr-form .btn {
   margin: .4rem 0;
 }
-.mbr-form .input-group-btn a.btn {
-  border-radius: 100px !important;
-}
-.mbr-form .input-group-btn a.btn:hover {
-  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
-}
+
 .mbr-form .input-group-btn button[type="submit"] {
   border-radius: 100px !important;
   padding: 1rem 3rem;
