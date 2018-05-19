@@ -89,9 +89,9 @@ body {
   letter-spacing: 1px;
   margin: .4rem .8rem;
   white-space: normal;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   padding: 1rem 3rem;
   border-radius: 3px;
   display: inline-flex;
@@ -102,9 +102,9 @@ body {
 .btn-sm {
   font-weight: 500;
   letter-spacing: 1px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   padding: 0.6rem 1.5rem;
   border-radius: 3px;
 }
@@ -112,9 +112,9 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   margin: .4rem .8rem !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   padding: 1rem 3rem;
   border-radius: 3px;
 }
@@ -122,9 +122,9 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   margin: .4rem .8rem !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   padding: 1.2rem 3.2rem;
   border-radius: 3px;
 }
@@ -536,6 +536,12 @@ a.text-black:focus {
   box-shadow: none !important;
 }
 
+.mbr-section-btn a.btn:not(.btn-form):hover,
+.mbr-section-btn a.btn:not(.btn-form):focus {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
+  -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
 .mbr-gallery-filter li a {
   border-radius: 100px !important;
 }
@@ -707,6 +713,13 @@ pre {
 /* Forms */
 .mbr-form .btn {
   margin: .4rem 0;
+}
+
+.mbr-form .input-group-btn a.btn {
+  border-radius: 100px !important;
+}
+.mbr-form .input-group-btn a.btn:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
 .mbr-form .input-group-btn button[type="submit"] {
