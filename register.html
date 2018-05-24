@@ -22,10 +22,10 @@
   <style type="text/css">
 
     .btn-register {
-      border-radius: 3em;
-      border-color: white;
-      color: white;
-      background: linear-gradient(to top, #ffaa09, #FD532C);
+		border-radius: 3em;
+		border-color: white;
+		color: white;
+		background: linear-gradient(to top, #ffaa09, #FD532C);
     }
 		
 		
@@ -93,11 +93,24 @@
 
 	#inline{margin-top: 0px;width:100%;height:auto;display:flex;align-items: center;justify-content: center;}
 
+	.svg-image {
+		position: relative;
+		right:0px;
+		width: 15%; 
+		height: auto; 
+		float: right;
+	}
+
+	@media screen and (max-width: 1250px) {
+	  	.svg-image {width:24%;}
+	}
+
 	@media screen and (max-width: 700px) {
 		#inline {   
 			flex-direction: column;
 		}
-	  .reg-card1,.reg-card2{width:85%}
+	  	.reg-card1,.reg-card2 {width:85%}
+	  	.svg-image {width:36%;}
 	}
 
 	.under-line {
@@ -148,17 +161,17 @@
 <section class="engine"></section><section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13">
     
 <div>
-  <img src="assets/images/register_top_left.svg" style="width: 18%; height: auto; float: right">
+  <img src="assets/images/register_top_left.svg" class="svg-image">
   <div class="container-fluid">
         <div class="media-container-row">
             <div class="mbr-text  col-md-11 mbr-fonts-style display-7"><p><br></p><div>
 			</div>
-				<h3 style="text-align: left; color: black; margin-top:1.7em;">REGISTER</h3>
+				<h3 style="text-align: left; color: black; margin-top:1.6em;">REGISTER</h3>
 				<div class="under-line"></div>
 				<p style="text-align: left; color:black;margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, 
 				eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, 
 				eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Vivamus molestie ullamcorper enim, 
-				eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. </p>
+				eget accumsan dolor placerat non.  Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim. lol. </p>
 			</div>
         </div>
     </div>
