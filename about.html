@@ -27,6 +27,50 @@
       background: linear-gradient(to right, steelblue , skyblue);
     }
 
+    @media screen and (max-width: : 700px) {
+    	#about-page-svg {
+    		width:30%;
+    	}
+    }
+
+    @media screen and (max-width : 300px) {
+    	#about-page-svg {
+    		width:35%;
+    	}
+    }
+
+    @media screen and (max-width: 1250px) {
+    	#about-page-svg {
+    		width:18%;
+    	}
+    }
+
+
+    #about-page-svg {
+    	position:relative!important;
+    	float:left!important;
+    	left:0!important;
+    	height:auto!important;
+    }
+
+    .about-underline-right {
+    border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, steelblue, skyblue);
+    margin-right: 2.5em;
+    float:right;
+    }
+
+    .about-underline-left {
+    	border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, steelblue, skyblue);
+    margin-left: 2.5em;
+    }
   </style>
   
 </head>
@@ -66,11 +110,13 @@
 
 <section class="engine"></section><section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13">
     
+  <img id="about-page-svg" src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left">
+
 <div>
-  <img src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left">
+  <!-- <img src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left"> -->s
   <div class="container-fluid">
         <div class="media-container-row">
-            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><br></p><div><img src="assets/images/calender.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black;">THE EVENT</h3><p style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</p></div>
+            <div class="mbr-text col-12 col-md-11 mbr-fonts-style display-7"><p><br></p><div><img src="assets/images/calender.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black;">THE EVENT</h3><div class="about-underline-right"></div><p style="text-align: right; color:black!important; margin-left:-4rem;margin-top:2rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</p></div>
         </div>
     </div>
 </div>
@@ -88,12 +134,12 @@
 
     <div class="container-fluid">
         <div class="media-container-row">
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-11">
                 <div class="media-container-row">
                     <div class="media-content">
                         <div class="mbr-section-text">
                             <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
-                               <div><img src="assets/images/man_talking.svg" style="width: 2rem; float: left; margin-right: 0.3rem;"></div><h3 style="text-align: left; color: black; font-size: 1.75rem; font-weight: 700;">TALKS</h3><span style="color: #767676"><strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools available today.</span>
+                               <div><img src="assets/images/man_talking.svg" style="width: 2rem; float: left; margin-right: 0.3rem;"></div><h3 style="text-align: left; color: black; font-size: 1.75rem; font-weight: 700;">TALKS</h3><div class="about-underline-left"></div><br><span style="color: black"><strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools available today.</span>
                             </p>
                         </div>
                     </div>
@@ -112,7 +158,7 @@
     
     <div class="container-fluid">
         <div class="media-container-row">
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-11">
                 <div class="media-container-row">
                     <div class="mbr-figure" style="width: 60%;">
                       <img src="assets/images/workshop.jpg" alt="Mobirise">  
@@ -120,7 +166,7 @@
                     <div class="media-content">
                         <div class="mbr-section-text" style="text-align: right">
                             <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                               <div><img src="assets/images/network.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black; font-size: 1.75rem; font-weight: 700;">WORKSHOPS</h3><span style="color: #767676"><strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools available today.</span>
+                               <div><img src="assets/images/network.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black; font-size: 1.75rem; font-weight: 700;">WORKSHOPS</h3><div class="about-underline-right"></div><br><span style="color: black;"><strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools available today.</span>
                             </p>
                         </div>
                     </div>
@@ -142,6 +188,11 @@
       <img src="assets/images/Numbers/0.svg" style="width:4rem; margin-right:0rem; margin-left: 0rem;">
       <img src="assets/images/Numbers/0.svg" style="width:4rem; margin-right:3rem; margin-left: 0rem;">
       <img src="assets/images/overview.svg" style="width: 8rem; float: right; transform: rotate(180deg);">
+      <br>
+      <p>DAYS</p>
+      <p>WORKSHOPS</p>
+      <P>TALKS</P>
+      <P>ATTENDEES</P>
     
         <!-- <div class="row main justify-content-center">
             <div class="media-container-column col-12 col-lg-3 col-md-4">
@@ -170,12 +221,12 @@
 
     <div class="container-fluid">
         <div class="media-container-row">
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-11">
                 <div class="media-container-row">
                     <div class="media-content">
                         <div class="mbr-section-text">
                             <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
-                               <div><img src="assets/images/man_talking.svg" style="width: 2rem; float: left; margin-right: 0.3rem;"></div><h3 style="text-align: left; color: black; font-size: 1.75rem; font-weight: 100">ABOUT <span style="font-weight: 700;">IIIT ALLAHABAD<span></h3><span style="color: #767676"><strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools available today.
+                               <div><img src="assets/images/man_talking.svg" style="width: 2rem; float: left; margin-right: 0.3rem;"></div><h3 style="text-align: left; color: black; font-size: 1.75rem; font-weight: 100">ABOUT <span style="font-weight: 700;">IIIT ALLAHABAD<span></h3><span style="color: black"><div class="about-underline-left"></div><br><span><strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools available today.</span>
                             </p>
                         </div>
                     </div>
@@ -195,7 +246,7 @@
     <div class="container-fluid">
         <div class="media-container-row">
             <div class="mbr-text col-12 col-md-10 mbr-fonts-style display-7">
-                <div><img src="assets/images/Geekhaven.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black; font-size: 1.75rem; font-weight: 700;">GEEKHAVEN</h3><span style="color: #767676"><strong> Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools <a href="https://mobirise.com/">available</a> today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
+                <div><img src="assets/images/Geekhaven.svg" style="width: 3rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black; font-size: 1.75rem; font-weight: 700;">GEEKHAVEN</h3><span style="color: black"><div class="about-underline-right" style="margin-right:0.3em"></div><br><strong> Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools <a href="https://mobirise.com/">available</a> today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
             </div>
         </div>
     </div>
