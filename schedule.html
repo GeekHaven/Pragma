@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/iiit-logo-transparent.gif" type="image/x-icon">
   <meta name="description" content="Website Maker Description">
-  <title>Schedule</title>
+  <title>About</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -27,94 +27,29 @@
       background: linear-gradient(to right, #9be15d , #00e3ae);
     }
 
-    .btn-card1 {
-      border-radius: 1.3em;
-      border-color: white;
-      color: white;
-      background: #00a17b;
-      padding: 0.7em;
-      margin: 5px;  
-      width: 100%;
-    }
+    
+    .about-page-svg {
+		position: relative;
+		right:0px;
+		width: 13%; 
+		height: auto; 
+		float: left;
+	}
 
-    .sched-card {
-      border-radius: 1.12em;
-      border: 2px solid #10e0ad;
-      margin: 2em;
-      margin-top: 3em;
-      padding: 1em;
-      padding-bottom: 1.5em;
-      width:40%;
-      height:auto;
-      text-align: center;
-      font-weight: 700;
+	@media screen and (max-width: 1250px) {
+	  	.about-page-svg {width:18%;}
+	}
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: #fff;
-        outline: 0;
-        box-shadow: none;
-      }
-    }
-    /* Create two unequal columns that floats next to each other */
-    .column-custom {
-        float: left;
-        padding: 7px;
-    }
-
-    .leftx {
-      width: 25%;
-    }
-
-    .rightx {
-      width: 75%;
-    }
-
-    /* Clear floats after the columns */
-    .row-custom:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    #inline{margin-top: 1em;width:100%;height:auto;display:flex;align-items: center;justify-content: center;}
-
-    @media screen and (max-width: 1250px) {
-      .svg-image {width:18%;}
-    }
-
-    @media screen and (max-width: 700px) {
-        #inline {   
-          flex-direction: column;
-        }
-        .sched-card {width:85%}
-        .svg-image {width:30%;}
-    }
-
-    .sched-page-svg {
-      position: relative;
-      right:0px;
-      width: 13%; 
-      height: auto; 
-      float: left;
-      z-index: 1;
-    }
-
-    @media screen and (max-width: 1250px) {
-        .sched-page-svg {width:18%;}
-    }
-
-    @media screen and (max-width: 700px) {
-        .sched-page-svg {width:30%;}
-    }
+	@media screen and (max-width: 700px) {
+		.about-page-svg {width:30%;}
+	}
 
 
-    @media screen and (min-width: 900px) {
-      .artcle-image {
-        width:50%;
-      }
-    }
+	@media screen and (min-width: 900px) {
+		.artcle-image {
+			width:50%;
+		}
+	}
 
     .schedule-underline-right {
     border-radius: 3em;
@@ -127,7 +62,16 @@
     }
 
     @media screen and (max-width: 300px) {
-      font-size: 3em;
+    	font-size: 3em;
+    }
+
+    .about-underline-left {
+    	border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, steelblue, skyblue);
+    margin-left: 2.5em;
     }
 
 
@@ -170,10 +114,10 @@
 
 <section class="engine"></section><section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13">
     
-  <!-- <img class="sched-page-svg" src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left"> -->
+  <!-- <img class="about-page-svg" src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left"> -->
 
 <div>
-  <img class="sched-page-svg" src="assets/images/schedule-top-left.svg">
+  <img class="about-page-svg" src="assets/images/schedule-top-left.svg">
 
   <!-- <img src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left"> -->s
   <div class="container-fluid">
@@ -185,226 +129,16 @@
 
 </section>
 
-
-<section class="mbr-section article content1 cid-qSoof4itFs" id="content1-19" style="margin-top: 0px;">
-
-  <div id="inline">
-      
-      <div class="sched-card"> 
-
-          <p style="font-size: 3.5em; font-weight: 100; ">
-
-            <img style="padding-left: 10px" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="left">
-
-            DAY <img style="padding: 1px; margin: 0px;" src="assets/images/Numbers/1.svg" width="43" height="43" align="center">
-
-            <img style="padding-right: 10px;" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="right"></p>
-            
-            <br />
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                10:00AM
-              </div>
-              <div class="column-custom rightx">
-                Opening Ceremony
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:00AM
-              </div>
-              <div class="column-custom rightx">
-                First Keynote Speech
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:30AM
-              </div>
-              <div class="column-custom rightx">
-                Talk Sessions
-              </div>
-            </div>
-          <div style="text-align:center;">   
-            <a href="#" class="btn btn-card1">LUNCH</a>
-          </div>
-
-          <div class="row-custom">
-              <div class="column-custom leftx">
-                10:00AM
-              </div>
-              <div class="column-custom rightx">
-                Opening Ceremony
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:00AM
-              </div>
-              <div class="column-custom rightx">
-                First Keynote Speech
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:30AM
-              </div>
-              <div class="column-custom rightx">
-                Talk Sessions
-              </div>
-            </div>
-          <div style="text-align:center;">   
-            <a href="#" class="btn btn-card1">LUNCH</a>
-          </div>
-
-      </div>
-    </p>
-
-
-    <p>
-        
-      <div class="sched-card"> 
-
-          <p style="font-size: 3.5em; font-weight: 100; ">
-
-            <img style="padding-left: 10px" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="left">
-
-            DAY <img style="padding: 1px; margin: 0px;" src="assets/images/Numbers/1.svg" width="43" height="43" align="center">
-
-            <img style="padding-right: 10px;" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="right"></p>
-            
-            <br />
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                10:00AM
-              </div>
-              <div class="column-custom rightx">
-                Opening Ceremony
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:00AM
-              </div>
-              <div class="column-custom rightx">
-                First Keynote Speech
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:30AM
-              </div>
-              <div class="column-custom rightx">
-                Talk Sessions
-              </div>
-            </div>
-          <div style="text-align:center;">   
-            <a href="#" class="btn btn-card1">LUNCH</a>
-          </div>
-
-          <div class="row-custom">
-              <div class="column-custom leftx">
-                10:00AM
-              </div>
-              <div class="column-custom rightx">
-                Opening Ceremony
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:00AM
-              </div>
-              <div class="column-custom rightx">
-                First Keynote Speech
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:30AM
-              </div>
-              <div class="column-custom rightx">
-                Talk Sessions
-              </div>
-            </div>
-          <div style="text-align:center;">   
-            <a href="#" class="btn btn-card1">LUNCH</a>
-          </div>
-
-      </div>
-    </p>
-
-    <p>
-        
-      <div class="sched-card"> 
-
-          <p style="font-size: 3.5em; font-weight: 100; ">
-
-            <img style="padding-left: 10px" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="left">
-
-            DAY <img style="padding: 1px; margin: 0px;" src="assets/images/Numbers/1.svg" width="43" height="43" align="center">
-
-            <img style="padding-right: 10px;" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="right"></p>
-            
-            <br />
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                10:00AM
-              </div>
-              <div class="column-custom rightx">
-                Opening Ceremony
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:00AM
-              </div>
-              <div class="column-custom rightx">
-                First Keynote Speech
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:30AM
-              </div>
-              <div class="column-custom rightx">
-                Talk Sessions
-              </div>
-            </div>
-          <div style="text-align:center;">   
-            <a href="#" class="btn btn-card1">LUNCH</a>
-          </div>
-
-          <div class="row-custom">
-              <div class="column-custom leftx">
-                10:00AM
-              </div>
-              <div class="column-custom rightx">
-                Opening Ceremony
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:00AM
-              </div>
-              <div class="column-custom rightx">
-                First Keynote Speech
-              </div>
-            </div>
-            <div class="row-custom">
-              <div class="column-custom leftx">
-                11:30AM
-              </div>
-              <div class="column-custom rightx">
-                Talk Sessions
-              </div>
-            </div>
-          <div style="text-align:center;">   
-            <a href="#" class="btn btn-card1">LUNCH</a>
-          </div>
-
-      </div>
-    </p>
-
+<div class="row" style="margin-top: 4rem;">
+<div class="jumbotron col-md-3 col-sm-6 mx-auto">
+  <div class="row mx-auto">
+  <img class="mx-2" src="assets/images/Schedule Title Pattern.svg" style="width: 5rem;">
+  <h1>DAY</h1><img class="mx-1" src="assets/images/Numbers/1.svg" style="width: 1.7rem;">
+  <img class="mx-2" src="assets/images/Schedule Title Pattern.svg" style="width: 5rem;">
+</div>
+</div>
+<div class="jumbotron col-md-3 col-sm-10 mx-auto"></div>
+<div class="jumbotron col-md-3 col-sm-10 mx-auto"></div>
 </div>
   
 
