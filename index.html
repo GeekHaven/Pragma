@@ -148,15 +148,23 @@
 	#register-inline{margin-top: 0px;width:100%;height:auto;display:flex;align-items: center;justify-content: center;}
 
 	.register-svg-image {
-		position: relative;
+		position: absolute;
 		right:0px;
-		width: 13%; 
+		width: 9%; 
 		height: auto; 
 		float: right;
 	}
 
 	@media screen and (max-width: 1250px) {
-	  	.register-svg-image {width:18%;}
+	  	.register-svg-image {width:12%;}
+	}
+
+	@media screen and (max-width: 700px) {
+		.register-svg-image {width:20%;}
+}
+
+	@media screen and (max-width: 450px) {
+	  	.register-svg-image {width:30%;}
 	}
 
 	@media screen and (max-width: 700px) {
@@ -164,7 +172,6 @@
 			flex-direction: column;
 		}
 	  	.register-reg-card1,.register-reg-card2 {width:85%}
-	  	.register-svg-image {width:30%;}
 	}
 
 	.register-under-line {
@@ -373,21 +380,25 @@
     }
 
     .sched-page-svg {
-      position: relative;
-      right:0px;
-      width: 13%; 
+      position: absolute;
+      left:0px;
+      width: 9%; 
       height: auto; 
       float: left;
       z-index: 1;
     }
 
-    @media screen and (max-width: 1250px) {
-        .sched-page-svg {width:18%;}
-    }
+		@media screen and (max-width: 1250px) {
+	  	.sched-page-svg  {width:12%;}
+		}	
 
-    @media screen and (max-width: 700px) {
-        .sched-page-svg {width:30%;}
-    }
+		@media screen and (max-width: 700px) {
+			.sched-page-svg  {width:20%;}
+		}
+
+		@media screen and (max-width: 450px) {
+			.sched-page-svg  {width:25%;}
+		}
 
 
     @media screen and (min-width: 900px) {
@@ -567,7 +578,7 @@
 		</section>
 
 		<section class="mbr-section content7 cid-qSooeAbs6H">
-		    <div class="container-fluid" style="height: 8rem;">
+		    <div class="container-fluid">
 		      <img src="assets/images/overview.svg" style="width: 8rem; float: left">
 		      <br>
 		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
@@ -633,10 +644,10 @@
 	<section id="register-container">
 		<section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13">
 			    
-			<div id="register">
 			  <img src="assets/images/register_top_left.svg" class="register-svg-image">
+			<div id="register">
 			  <div class="container-fluid">
-			        <div class="media-container-row">
+			        <div id="special" class="media-container-row">
 			            <div class="mbr-text  col-md-11 mbr-fonts-style display-7"><p><br></p><div>
 						</div>
 							<h3 style="text-align: left; color: black; margin-top:1.6em;">REGISTER</h3>
