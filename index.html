@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html >
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -17,6 +18,257 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <style type="text/css">
+
+  	.hidden {
+      visibility: hidden;
+    }
+    .btn-about {
+      border-radius: 3em;
+      border-color: white;
+      color: white;
+      background: linear-gradient(to right, steelblue , skyblue);
+    }
+
+    .about-page-svg {
+    position: relative;
+    right:0px;
+    width: 13%; 
+    height: auto; 
+    float: left;
+  }
+
+  @media screen and (max-width: 1250px) {
+      .about-page-svg {width:18%;}
+  }
+
+  @media screen and (max-width: 700px) {
+    .about-page-svg {width:30%;}
+  }
+
+
+  @media screen and (min-width: 900px) {
+    .artcle-image {
+      width:50%;
+    }
+  }
+
+    .about-underline-right {
+    border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, steelblue, skyblue);
+    margin-right: 2.5em;
+    float:right;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: 3em;
+    }
+
+    .about-underline-left {
+      border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, steelblue, skyblue);
+    margin-left: 2.5em;
+    }
+
+    .btn-register {
+		border-radius: 3em;
+		border-color: white;
+		color: white;
+		background: linear-gradient(to top, #ffaa09, #FD532C);
+    }
+		
+		
+	.register-reg-card1 {
+		color: #fff;
+		border-radius: 10px;
+		border-color: white;
+		background: linear-gradient(to right, #FD532C , #ffaa09);
+		margin: 1.2em;
+		margin-top: 0px;
+		padding: 2em;
+		padding-bottom: 1.2em;
+		width:40%;
+		height:auto;
+		text-align: center;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #fff;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+
+	.register-reg-card2 {
+		color: #a7a7a7;
+		border-radius: 10px;
+		border-color: white;
+		background: linear-gradient(to top, black , #2d2c2c);
+		margin: 1.2em;
+		margin-top: 0px;
+		padding: 2em;
+		padding-bottom: 1.2em;
+		width:40%;
+		height:auto;
+		text-align: center;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #a7a7a7;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+
+	.register-btn-card1 {
+		border-radius: 3em;
+		border-color: white;
+		color: white;
+		padding: 5px 20px 5px 20px;
+		margin-bottom:0px;
+		margin-top: 2em;
+	}
+	
+	.register-btn-card2 {
+		border-radius: 3em;
+		border-color: #a7a7a7;
+		color: #a7a7a7;
+		padding: 5px 20px 5px 20px;
+		margin-bottom:0px;
+		margin-top: 2em;
+	}
+
+	#register-inline{margin-top: 0px;width:100%;height:auto;display:flex;align-items: center;justify-content: center;}
+
+	.register-svg-image {
+		position: relative;
+		right:0px;
+		width: 13%; 
+		height: auto; 
+		float: right;
+	}
+
+	@media screen and (max-width: 1250px) {
+	  	.register-svg-image {width:18%;}
+	}
+
+	@media screen and (max-width: 700px) {
+		#register-inline {   
+			flex-direction: column;
+		}
+	  	.register-reg-card1,.register-reg-card2 {width:85%}
+	  	.register-svg-image {width:30%;}
+	}
+
+	.register-under-line {
+		border-radius: 3em;
+		border-color: white;
+		height: 7px;
+		width: 3em;
+		background: linear-gradient(to left, #ffaa09, #FD532C);
+		margin-bottom: 1em;
+	}
+    
+    
+  .about-reg-card1 {
+    color: #fff;
+    border-radius: 10px;
+    border-color: white;
+    background: linear-gradient(to right, #FD532C , #ffaa09);
+    margin: 1.2em;
+    margin-top: 0px;
+    padding: 2em;
+    padding-bottom: 1.2em;
+    width:40%;
+    height:auto;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .about-reg-card2 {
+    color: #a7a7a7;
+    border-radius: 10px;
+    border-color: white;
+    background: linear-gradient(to top, black , #2d2c2c);
+    margin: 1.2em;
+    margin-top: 0px;
+    padding: 2em;
+    padding-bottom: 1.2em;
+    width:40%;
+    height:auto;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #a7a7a7;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .about-btn-card1 {
+    border-radius: 3em;
+    border-color: white;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    margin-bottom:0px;
+    margin-top: 2em;
+  }
+  
+  .about-btn-card2 {
+    border-radius: 3em;
+    border-color: #a7a7a7;
+    color: #a7a7a7;
+    padding: 5px 20px 5px 20px;
+    margin-bottom:0px;
+    margin-top: 2em;
+  }
+
+  #about-inline{margin-top: 0px;width:100%;height:auto;display:flex;align-items: center;justify-content: center;}
+
+  .about-svg-image {
+    position: relative;
+    right:0px;
+    width: 13%; 
+    height: auto; 
+    float: right;
+  }
+
+  @media screen and (max-width: 1250px) {
+      .about-svg-image {width:18%;}
+  }
+
+  @media screen and (max-width: 700px) {
+    #about-inline {   
+      flex-direction: column;
+    }
+      .about-reg-card1,.about-reg-card2 {width:85%}
+      .about-svg-image {width:30%;}
+  }
+
+  .about-under-line {
+    border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, #ffaa09, #FD532C);
+    margin-bottom: 1em;
+  }
     #overlay1 {
 	    position: fixed;
 	    width: 100%;
@@ -47,89 +299,626 @@
 	@media screen and (max-width: 700px) {
 		#container-top-padding {padding-top: 3.5em;}
 	}
+
+	.btn-schedule {
+      border-radius: 3em;
+      border-color: white;
+      color: white;
+      background: linear-gradient(to right, #9be15d , #00e3ae);
+    }
+
+    .schedule-btn-card1 {
+      border-radius: 1.3em;
+      border-color: white;
+      color: white;
+      background: #00a17b;
+      padding: 0.7em;
+      margin: 5px;  
+      width: 100%;
+    }
+
+    .sched-card {
+      border-radius: 1.12em;
+      border: 2px solid #10e0ad;
+      margin: 2em;
+      margin-top: 3em;
+      padding: 1em;
+      padding-bottom: 1.5em;
+      width:40%;
+      height:auto;
+      text-align: center;
+      font-weight: 700;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    /* Create two unequal columns that floats next to each other */
+    .column-custom {
+        float: left;
+        padding: 7px;
+    }
+
+    .schedule-leftx {
+      width: 25%;
+    }
+
+    .schedule-rightx {
+      width: 75%;
+    }
+
+    /* Clear floats after the columns */
+    .row-custom:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #schedule-inline{margin-top: 1em;width:100%;height:auto;display:flex;align-items: center;justify-content: center;}
+
+    @media screen and (max-width: 1250px) {
+      .svg-image {width:18%;}
+    }
+
+    @media screen and (max-width: 700px) {
+        #schedule-inline {   
+          flex-direction: column;
+        }
+        .sched-card {width:85%}
+        .svg-image {width:30%;}
+    }
+
+    .sched-page-svg {
+      position: relative;
+      right:0px;
+      width: 13%; 
+      height: auto; 
+      float: left;
+      z-index: 1;
+    }
+
+    @media screen and (max-width: 1250px) {
+        .sched-page-svg {width:18%;}
+    }
+
+    @media screen and (max-width: 700px) {
+        .sched-page-svg {width:30%;}
+    }
+
+
+    @media screen and (min-width: 900px) {
+      .schedule-artcle-image {
+        width:50%;
+      }
+    }
+
+    .schedule-underline-right {
+    border-radius: 3em;
+    border-color: white;
+    height: 7px;
+    width: 3em;
+    background: linear-gradient(to left, #9be15d , #00e3ae);
+    margin-right: 0em;
+    float:right;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: 3em;
+    }
+
   </style>
-  
-  
 </head>
-<body>
-  <section class="menu cid-qSkaJay3J2" once="menu" id="menu2-m">
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="https://www.iiita.ac.in/">
-                        <img src="assets/images/iiit-logo-transparent.gif" alt="iiita-logo" title="" style="height: 4.5rem;">
-                    </a>
-                </span>
 
-                <span class="navbar-logo">
-                    <a href="https://geekhaven.iiita.ac.in/">
-                        <img src="assets/images/Geekhaven.svg" alt="geekhaven-logo" title="" style="height: 3.5rem;">
-                    </a>
-                </span>
-                
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                  <a class="nav-link link text-white display-4" href="about.html">
-                      ABOUT</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link link text-white display-4" href="register.html">
-                      REGISTER</a>
-              </li><li class="nav-item"><a class="nav-link link text-white display-4" href="schedule.html">SCHEDULE</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">SPONSORS</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">FAQ</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#">CONTACT US</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#"></a></li></ul>
-        </div>
-    </nav>
-</section>
+<body data-spy="scroll" data-target="#scroll-spy">
 
-<section class="cid-qSkbn8Ed26 mbr-fullscreen mbr-parallax-background" id="header2-n" >
-<div id="overlay1">
-	<div id="overlay2">
-    <div class="container-fluid" id="container-top-padding">
-        <div class="row justify-content-md-left">
-          <div class="col-md-1"></div>
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title mbr-bold pb-0 mbr-fonts-style display-5" style="line-height: 1; margin-bottom: 0rems"><span style="font-weight: normal;"><br></span><br><span style="font-weight: normal;">IIIT ALLAHABAD</span></h1>
-                
-                <p class="mbr-text pb-0 mbr-fonts-style display-1 pt-0" style="line-height: 1.3; font-family: 'Lato', sans-serif; margin-bottom: 0px;"><strong>STUDENT DEVELOPER</strong><br><strong>CONFERENCE <span style="color: #f09819;">2018</span></strong><br>
-                </p>
-                <span style="font-weight: normal;"><h3>12-14th AUGUST</h3></span>
-                <div class="mbr-section-btn"><p class="btn btn-sm btn-white" style="border-radius: 50px;padding: 0.2rem 5rem;ma;margin: 0.5rem 1rem 2rem 0.5rem;"></p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-white display-4" href="#">SUBMIT PROPOSAL</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="#">BUT TICKETS</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-        <a href="#next">
-            <i class="mbri-down mbr-iconfont"></i>
-        </a>
-    </div>
-	</div>
-</div>
-</section>
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+		  	<section class=" menu cid-qSojkewxzC" once="menu" id="menu2-m">
+			    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+			        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			            <div class="hamburger">
+			                <span></span>
+			                <span></span>
+			                <span></span>
+			                <span></span>
+			            </div>
+			        </button>
+			        <div class="menu-logo">
+			            <div class="navbar-brand">
+			                <span class="navbar-logo">
+			                    <a href="https://www.iiita.ac.in/">
+			                        <img src="assets/images/iiit-logo-transparent.gif" alt="iiita-logo" title="" style="height: 4.5rem;">
+			                    </a>
+			                </span>
 
-	<footer id="svg-landing-image" style="background: url(assets/images/landing_svg.svg);
-	  background-position: right bottom;
-	  opacity : 1;
-	  height: 45%;
-	  width: 33%;
-	  position : absolute;
-	  background-repeat: no-repeat;
-	  right: 0px;
-	  bottom: 0px;
-	  z-index: 5000;
-	  filter: alpha(opacity=25) progid:DXImageTransform.Microsoft.Alpha(opacity=25);">
-  </footer>
+			                <span class="navbar-logo">
+			                    <a href="https://geekhaven.iiita.ac.in/">
+			                        <img src="assets/images/Geekhaven.svg" alt="geekhaven-logo" title="" style="height: 3.5rem;">
+			                    </a>
+			                </span>
+			                
+			            </div>
+			        </div>
+			        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+			              <li class="nav-item">
+			                  <a class="nav-link link display-4" href="#about">
+			                      ABOUT</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="nav-link link display-4" href="#register">
+			                      REGISTER</a>
+			              </li><li class="nav-item"><a class="nav-link link display-4" href="#schedule">SCHEDULE</a></li><li class="nav-item"><a class="nav-link link display-4" href="#">SPONSORS</a></li><li class="nav-item"><a class="nav-link link display-4" href="#">FAQ</a></li><li class="nav-item"><a class="nav-link link display-4" href="#">CONTACT US</a></li><li class="nav-item"><a class="nav-link link display-4" href="#"></a></li></ul>
+			        </div>
+			    </nav>
+			</section>
+		</div>
+	</nav>
+
+
+	<section id="home" class="cid-qSkbn8Ed26 mbr-fullscreen mbr-parallax-background" id="header2-n">
+		<div id="overlay1">
+		<div id="overlay2">
+		    <div class="container-fluid" id="container-top-padding">
+		        <div class="row justify-content-md-left">
+		        <div class="col-md-1"></div>
+		            <div class="mbr-white col-md-10">
+		                <h1 class="mbr-section-title mbr-bold pb-0 mbr-fonts-style display-5" style="line-height: 1; margin-bottom: 0rems"><span style="font-weight: normal;"><br></span><br><span style="font-weight: normal;">IIIT ALLAHABAD</span></h1>
+		                
+		                <p class="mbr-text pb-0 mbr-fonts-style display-1 pt-0" style="line-height: 1.3; font-family: 'Lato', sans-serif; margin-bottom: 0px;"><strong>STUDENT DEVELOPER</strong><br><strong>CONFERENCE <span style="color: #f09819;">2018</span></strong><br>
+		                </p>
+		                <span style="font-weight: normal;"><h3>12-14th AUGUST</h3></span>
+		                <div class="mbr-section-btn"><p class="btn btn-sm btn-white" style="border-radius: 50px;padding: 0.2rem 5rem;ma;margin: 0.5rem 1rem 2rem 0.5rem;"></p>
+		                <div class="mbr-section-btn"><a class="btn btn-md btn-white display-4" href="#">SUBMIT PROPOSAL</a>
+		                    <a class="btn btn-md btn-white-outline display-4" href="#">BUT TICKETS</a></div>
+		            	</div>
+		        	</div>
+		    	</div>
+		    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+		        <a href="#about">
+		            <i class="mbri-down mbr-iconfont"></i>
+		        </a>
+		    </div>
+			</div>
+
+		</div>
+		</div>
+
+		<footer id="svg-landing-image" style="background: url(assets/images/landing_svg.svg);
+		  background-position: right bottom;
+		  opacity : 1;
+		  height: 45%;
+		  width: 33%;
+		  position : absolute;
+		  background-repeat: no-repeat;
+		  right: 0px;
+		  bottom: 0px;
+		  z-index: 5000;
+		  filter: alpha(opacity=25) progid:DXImageTransform.Microsoft.Alpha(opacity=25);">
+	    </footer>
+	</section>
+
+
+	<section id="about-container" >
+		<section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13 about-start">
+		    
+		  <!-- <img class="about-page-svg" src="assets/images/about_top_left.svg" style="width: 20%; height: 45%; float: left"> -->
+
+		<div id="about">
+		  <img class="about-page-svg" src="assets/images/about_top_left.svg">
+
+		  
+		  <div class="container-fluid">
+		        <div class="media-container-row">
+		            <div class="mbr-text col-12 col-md-11 mbr-fonts-style display-7"><p><br></p><div><img class="article-img" src="assets/images/calender.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 class="first-heading" style="text-align: right; color: black;">THE EVENT</h3><div class="about-underline-right"></div><p style="text-align: right; color:black!important; margin-left:-4rem;margin-top:2rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</p></div>
+		        </div>
+		    </div>
+		</div>
+
+		  
+		</section>
+
+		<section class="mbr-section content7 cid-qSonEczDK8" id="content7-15">
+		          
+		    
+
+		    <div class="container-fluid">
+		        <div class="media-container-row">
+		            <div class="col-12 col-md-11">
+		                <div class="media-container-row">
+		                    <div class="media-content">
+		                        <div class="mbr-section-text">
+		                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
+		                               <div><img src="assets/images/man_talking.svg" style="width: 2rem; float: left; margin-right: 0.3rem;"></div><h3 style="text-align: left; color: black; font-size: 1.75rem; font-weight: 700;">TALKS</h3><div class="about-underline-left"></div><br><span style="color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</span>
+		                            </p>
+		                        </div>
+		                    </div>
+		                    <div class="mbr-figure" style="width: 60%;">
+		                     <img class="article-img" src="assets/images/talkphoto.jpg" alt="">  
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+		<section class="mbr-section content6 cid-qSonFl246l" id="content6-16">
+		    
+		     
+		    
+		    <div class="container-fluid">
+		        <div class="media-container-row">
+		            <div class="col-12 col-md-11">
+		                <div class="media-container-row">
+		                    <div class="mbr-figure" style="width: 60%;">
+		                      <img class="article-image visible-0" src="assets/images/workshop.jpg" alt="Mobirise">  
+		                    </div>
+		                    <div class="media-content">
+		                        <div class="mbr-section-text" style="text-align: right">
+		                            <p class="mbr-text mb-0 mbr-fonts-style display-7">
+		                               <div><img src="assets/images/network.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black; font-size: 1.75rem; font-weight: 700;">WORKSHOPS</h3><div class="about-underline-right"></div><br><span style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</span>
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+		<section class="mbr-section content7 cid-qSooeAbs6H">
+		    <div class="container-fluid" style="height: 8rem;">
+		      <img src="assets/images/overview.svg" style="width: 8rem; float: left">
+		      <br>
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/Numbers/3.svg" style="width:3rem">
+		      <img src="assets/images/overview.svg" style="width: 8rem; float: right; transform: rotate(180deg); bottom: 0;right: 0">
+		    </div>
+		</section>
+
+		<section class="mbr-section content7 cid-qSooeAbs6H" id="content7-18">
+		          
+		    
+
+		    <div class="container-fluid">
+		        <div class="media-container-row">
+		            <div class="col-12 col-md-11">
+		                <div class="media-container-row">
+		                    <div class="media-content">
+		                        <div class="mbr-section-text">
+		                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
+		                               <div><img src="assets/images/man_talking.svg" style="width: 2rem; float: left; margin-right: 0.3rem;"></div><h3 style="text-align: left; color: black; font-size: 1.75rem; font-weight: 100">ABOUT <span style="font-weight: 700;">IIIT ALLAHABAD<span></h3><span style="color: black"><div class="about-underline-left"></div><br><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</span>
+		                            </p>
+		                        </div>
+		                    </div>
+		                    <div class="mbr-figure" style="width: 60%;">
+		                     <img class="article-image" src="assets/images/iiita-campus.jpg" alt="IIIT-Allahabad">  
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+		<section class="mbr-section article content1 cid-qSoof4itFs" id="content1-19">
+
+		    <div class="container-fluid">
+		        <div class="media-container-row">
+		            <div class="col-12 col-md-11">
+		                <div class="media-container-row">
+		                    <div class="media-content">
+		                        <div class="mbr-section-text" style="text-align: right">
+		                            <p class="mbr-text mb-0 mbr-fonts-style display-7">
+		                               <div><img src="assets/images/geekhaven.svg" style="width: 2rem; float: right; margin-left: 0.3rem;"></div><h3 style="text-align: right; color: black; font-size: 1.75rem; font-weight: 700;">GEEKHAVEN</h3><div class="about-underline-right"></div><br><span style="color: black;">
+
+		                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. Aliquam varius malesuada ligula a finibus. Nulla et justo risus. Proin a iaculis tortor. Cras elementum eleifend ornare. Quisque pulvinar mi vitae ultrices hendrerit. Mauris tristique ante dui, ac egestas tellus efficitur a. Quisque suscipit hendrerit commodo. Maecenas ut turpis quis velit iaculis fringilla.</span>
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+		</section>
+	</section>
+
+
+	<section id="register-container">
+		<section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13">
+			    
+			<div id="register">
+			  <img src="assets/images/register_top_left.svg" class="register-svg-image">
+			  <div class="container-fluid">
+			        <div class="media-container-row">
+			            <div class="mbr-text  col-md-11 mbr-fonts-style display-7"><p><br></p><div>
+						</div>
+							<h3 style="text-align: left; color: black; margin-top:1.6em;">REGISTER</h3>
+							<div class="register-under-line"></div>
+							<p style="text-align: left; color:black;margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis est in erat pharetra, 
+							eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper get accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. lol. Nulla mattis est in erat pharetra, eget porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. lol. Nulla mattis est in erat pharetra, get porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. lol. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. lol.Nulla mattis est in erat pharetra, porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. lol. Nulla mattis est in erat pharetra,  porta erat tincidunt. Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, lololol olololl hs sfi fkrfiw rfiuf ewuiferw fiw wifu wigfwgrwrgb eget accumsan dolor placerat non. Donec congue purus non purus malesuada tempor. lol.  </p>
+						</div>
+			        </div>
+			    </div>
+			</div>
+
+			</section>
+
+			<section class="mbr-section article content1 cid-qSoof4itFs" id="content1-19" style="margin-top: 0px;">
+				<div id="register-inline">
+			        <div class="register-reg-card1"> Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, 
+						eget accumsan dolor placerat non.
+						<br/>
+						<div style="text-align:center;">   
+							<a href="#" class="btn register-btn-card1">SUBMIT A PROPOSAL</a>
+						</div>
+					</div>
+			    </p>
+			    <p>
+			        <div class="register-reg-card2"> Nam quis velit egestas, malesuada dolor et, lobortis elit. Vivamus molestie ullamcorper enim, 
+						eget accumsan dolor placerat non
+						<br/>
+						<div style="text-align:center">   
+							<a  href="#" class="btn register-btn-card2">BUY TICKETS</a>	
+						</div>			
+					</div>
+			    </p>
+			</div>
+			  
+		</section>
+	</section>
+
+
+	<section id="schedule-container">
+		<section class="mbr-section article content1 cid-qSommGFvbs" id="content1-13">
+    
+
+			<div id="schedule">
+			  <img class="sched-page-svg" src="assets/images/schedule-top-left.svg">
+
+			  <div class="container-fluid">
+			        <div class="media-container-row">
+			            <div class="mbr-text col-12 col-md-11 mbr-fonts-style display-7"><p><br></p><h1 class="first-heading" style="text-align: right; color: black;">SCHEDULE</h1><div class="schedule-underline-right"></div></div>
+			        </div>
+			    </div>
+			</div>
+
+		</section>
+
+
+		<section class="mbr-section article content1 cid-qSoof4itFs" id="content1-19" style="margin-top: 0px;">
+
+		  <div id="schedule-inline">
+
+		  	<p>
+		      
+		      <div class="sched-card"> 
+
+		          <p style="font-size: 3.5em; font-weight: 100; ">
+
+		            <img style="padding-left: 10px" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="left">
+
+		            DAY <img style="padding: 1px; margin: 0px;" src="assets/images/Numbers/1.svg" width="43" height="43" align="center">
+
+		            <img style="padding-right: 10px;" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="right"></p>
+		            
+		            <br />
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                10:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Opening Ceremony
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                First Keynote Speech
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:30AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Talk Sessions
+		              </div>
+		            </div>
+		          <div style="text-align:center;">   
+		            <a href="#" class="btn schedule-btn-card1">LUNCH</a>
+		          </div>
+
+		          <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                10:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Opening Ceremony
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                First Keynote Speech
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:30AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Talk Sessions
+		              </div>
+		            </div>
+		          <div style="text-align:center;">   
+		            <a href="#" class="btn schedule-btn-card1">LUNCH</a>
+		          </div>
+
+		      </div>
+		    </p>
+
+		    <p>
+		        
+		      <div class="sched-card"> 
+
+		          <p style="font-size: 3.5em; font-weight: 100; ">
+
+		            <img style="padding-left: 10px" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="left">
+
+		            DAY <img style="padding: 1px; margin: 0px;" src="assets/images/Numbers/1.svg" width="43" height="43" align="center">
+
+		            <img style="padding-right: 10px;" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="right"></p>
+		            
+		            <br />
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                10:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Opening Ceremony
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                First Keynote Speech
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:30AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Talk Sessions
+		              </div>
+		            </div>
+		          <div style="text-align:center;">   
+		            <a href="#" class="btn schedule-btn-card1">LUNCH</a>
+		          </div>
+
+		          <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                10:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Opening Ceremony
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                First Keynote Speech
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:30AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Talk Sessions
+		              </div>
+		            </div>
+		          <div style="text-align:center;">   
+		            <a href="#" class="btn schedule-btn-card1">LUNCH</a>
+		          </div>
+
+		      </div>
+		    </p>
+
+		    <p>
+		        
+		      <div class="sched-card"> 
+
+		          <p style="font-size: 3.5em; font-weight: 100; ">
+
+		            <img style="padding-left: 10px" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="left">
+
+		            DAY <img style="padding: 1px; margin: 0px;" src="assets/images/Numbers/1.svg" width="43" height="43" align="center">
+
+		            <img style="padding-right: 10px;" src="assets/images/Schedule Title Pattern.svg" width="20%" height="55" align="right"></p>
+		            
+		            <br />
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                10:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Opening Ceremony
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                First Keynote Speech
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:30AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Talk Sessions
+		              </div>
+		            </div>
+		          <div style="text-align:center;">   
+		            <a href="#" class="btn schedule-btn-card1">LUNCH</a>
+		          </div>
+
+		          <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                10:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Opening Ceremony
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:00AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                First Keynote Speech
+		              </div>
+		            </div>
+		            <div class="row-custom">
+		              <div class="column-custom schedule-leftx">
+		                11:30AM
+		              </div>
+		              <div class="column-custom schedule-rightx">
+		                Talk Sessions
+		              </div>
+		            </div>
+		          <div style="text-align:center;">   
+		            <a href="#" class="btn schedule-btn-card1">LUNCH</a>
+		          </div>
+
+		      </div>
+		    </p>
+
+		  </div>
+		</section>
+	</section>
 
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
@@ -141,6 +930,98 @@
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  
+
+  <script type="text/jquery">
+		$(document).ready(function(){
+
+		// Scrollspy initiation
+		$('body').scrollspy({ 
+			target: '#scroll-spy',
+			offset: 70
+		});
+
+		// On render, adjust body padding to ensure last Scroll target can reach top of screen
+		var height = $('#howto').innerHeight();
+		var windowHeight = $(window).height();
+		var navHeight = $('nav.navbar').innerHeight();
+		var siblingHeight = $('#howto').nextAll().innerHeight();
+
+
+		if(height < windowHeight){
+			$('body').css("padding-bottom", windowHeight-navHeight-height-siblingHeight + "px");
+		}
+
+		// On window resize, adjust body padding to ensure last Scroll target can reach top of screen
+		$(window).resize(function(event){
+			var height = $('#howto').innerHeight();
+			var windowHeight = $(window).height();
+			var navHeight = $('nav.navbar').innerHeight();
+			var siblingHeight = $('#howto').nextAll().innerHeight();
+			
+			
+			if(height < windowHeight){
+				$('body').css("padding-bottom", windowHeight-navHeight-height-siblingHeight + "px");
+			}
+		});
+
+		$('nav.navbar a, .scrollTop').click(function(event){
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash (#)
+				var hash = this.hash;
+				
+				// Ensure no section has relevant class
+				$('section').removeClass("focus");
+
+				// Add class to target
+				$(hash).addClass("focus");
+
+				// Remove thy class after timeout
+				setTimeout(function(){
+					$(hash).removeClass("focus");
+				}, 2000);			
+				
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top - 69
+				}, 600, function(){
+					
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;				
+				});
+						
+				// Collapse Navbar for mobile view
+				$(".navbar-collapse").collapse('hide');			
+			}
+
+		});
+		$(window).scroll(function(){
+			var scrollPos = $('body').scrollTop();
+			if(scrollPos > 0){
+				$('.navbar').addClass('show-color');
+				$('.scrollTop').addClass('show-button');
+			} else{
+				$('.navbar').removeClass('show-color');
+				$('.scrollTop').removeClass('show-button');
+			}
+			
+		});
+		});
+  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+	

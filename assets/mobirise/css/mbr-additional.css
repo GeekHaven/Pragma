@@ -1771,14 +1771,20 @@ body {
 }
 .cid-qSojkewxzC .navbar {
   background: #ffffff;
+  color: black;
   transition: none;
   min-height: 77px;
   padding: .5rem 0;
 }
+
+.cid-qSojkewxzC a {
+  color: #D3D3D3;
+}
+
 .cid-qSojkewxzC .navbar-dropdown.bg-color.transparent.opened {
   background: #ffffff;
 }
-.cid-qSojkewxzC a {
+.cid-qSojkewxzC {
   font-style: normal;
 }
 .cid-qSojkewxzC .nav-item span {
