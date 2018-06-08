@@ -616,11 +616,11 @@ a:hover {
 .mbr-arrow a {
   color: #ffffff;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .mbr-arrow {
     display: none;
   }
-}
+} */
 .form-control-label {
   position: relative;
   cursor: pointer;
