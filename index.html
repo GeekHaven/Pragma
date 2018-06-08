@@ -409,7 +409,10 @@
     @media screen and (max-width: 300px) {
       font-size: 3em;
     }
-
+   
+   .hide{
+    display: none;
+   }
   </style>
 </head>
 
@@ -427,13 +430,13 @@
 		</button>
 		<div class="menu-logo">
 		    <div class="navbar-brand">
-			<span class="navbar-logo">
-			    <a href="https://www.iiita.ac.in/">
-				<img src="assets/images/iiit-logo-transparent.gif" alt="iiita-logo" title="" style="height: 4.5rem;">
+			<span class="navbar-logo my1" >
+			    <a href="https://www.iiita.ac.in/" class="variable">
+				<img src="assets/images/iiit-logo-transparent.gif" class="navi" alt="iiita-logo" title="" style="height: 4.5rem;">
 			    </a>
 			</span>
 
-			<span class="navbar-logo">
+			<span class="navbar-logo navg">
 			    <a href="https://geekhaven.iiita.ac.in/">
 				<img src="assets/images/Geekhaven.svg" alt="geekhaven-logo" title="" style="height: 3.5rem;">
 			    </a>
@@ -468,7 +471,7 @@
 		                <p class="mbr-text pb-0 mbr-fonts-style display-1 pt-0" style="line-height: 1.3; font-family: 'Lato', sans-serif; margin-bottom: 0px;"><strong>STUDENT DEVELOPER</strong><br><strong>CONFERENCE <span style="color: #f09819;">2018</span></strong><br>
 		                </p>
 		                <span style="font-weight: normal;"><h3>12-14th AUGUST</h3></span>
-		                <div class="mbr-section-btn"><p class="btn btn-sm btn-white" style="border-radius: 50px;padding: 0.2rem 5rem;ma;margin: 0.5rem 1rem 2rem 0.5rem;"></p>
+		                <div class="mbr-section-btn"><p class="btn btn-sm " style="border-radius: 50px;padding: 0.2rem 5rem;ma;margin: 0.5rem 1rem 2rem 0.5rem;"></p>
 		                <div class="mbr-section-btn"><a class="btn btn-md btn-white display-4" href="#">SUBMIT PROPOSAL</a>
 		                    <a class="btn btn-md btn-white-outline display-4" href="#">BUT TICKETS</a></div>
 		            	</div>
@@ -1000,6 +1003,7 @@
 			if(scrollPos > 0){
 				$('.navbar').addClass('show-color');
 				$('.scrollTop').addClass('show-button');
+        
 			} else{
 				$('.navbar').removeClass('show-color');
 				$('.scrollTop').removeClass('show-button');
@@ -1008,16 +1012,29 @@
 		});
 		});
   </script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+     var h = $(window).height() ;
+  $(window).scroll(function(){
+    var scrp = $(window).scrollTop() ;
+ 
+   if(scrp > 0){
+   
+    $('.navi').attr("src","assets/images/cooltext289201572976342.png");
+     $('.variable').attr("href","index.html");
+        $('.navg').css("display","none");
+   }
+   else{
+     $('.navi').attr("src","assets/images/iiit-logo-transparent.gif");
+     $('.variable').attr("href","https://www.iiita.ac.in");
+        $('.navg').css("display","block");
+   }
+ });
+}) ;
+
+</script>
 </body>
 </html>
 
 
-
-
-
-
-
-
-
-
-	
+  
