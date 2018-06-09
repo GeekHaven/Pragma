@@ -78,7 +78,6 @@ footer .list-inline-item a:visited{
 }
 
 
-
 footer .list-inline-item a:hover{
   color:black!important;
   background:none;
@@ -1008,7 +1007,7 @@ footer p{
  
       <div class="row">
 
-        <div class="col-12 col-sm-12 col-md-4">
+        <div class="col-12 col-sm-12 col-md-4 foot" align="left">
 
           <ul class="list-inline">
 
@@ -1024,9 +1023,7 @@ footer p{
                 <img class="img-responsive" id="geek" src="assets/images/Geekhaven.svg" height="55px" width="60px">
               </a>
             </li>
-             <li class="list-inline-item">
-              
-            </li>
+      
           </ul>
         </div>
 
@@ -1038,7 +1035,7 @@ footer p{
         </div>
 
 
-        <div class="col-12 col-sm-12 col-md-4">
+        <div class="col-12 col-sm-12 col-md-4 foot" align="right">
           <ul class="list-inline">
 
             <li class="list-inline-item">
@@ -1177,6 +1174,20 @@ footer p{
         $('.navg').css("display","block");
    }
  });
+
+
+</script>
+  <script type="text/javascript">
+  
+     var h1 = $(window).height() ;
+ 
+ 
+   if(h1 < 576){
+   
+    $('.foot').attr("align","center");
+     
+   }
+   
 
 
 </script>
