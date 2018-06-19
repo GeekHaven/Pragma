@@ -1,0 +1,38 @@
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 15px;
+  
+	background-color: white;
+	color:black;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 1px;
+	border-style: solid;
+	
+
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+
+
+/* Download box shape  */
+
+/* Download arrow shape */
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
