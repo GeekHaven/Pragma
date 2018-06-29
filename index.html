@@ -37,6 +37,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style type="text/css">
 
+  	i:hover{
+  		color: white;
+  	}
   	.hidden {
       visibility: hidden;
     }
@@ -624,13 +627,21 @@ footer p{
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
 		      <li class="nav-item">
-			  <a class="nav-link link display-4" href="#about">
-			      ABOUT</a>
+			  		<a class="nav-link link display-4" href="#about">
+			      	ABOUT
+			      </a>
 		      </li>
 		      <li class="nav-item">
-			  <a class="nav-link link display-4" href="#register">
-			      REGISTER</a>
-		      </li><li class="nav-item"><a class="nav-link link display-4" href="#schedule">SCHEDULE</a></li><li class="nav-item"><a class="nav-link link display-4" href="#sponsor">SPONSORS</a></li></ul>
+			  		<a class="nav-link link display-4" href="#register">
+			      	REGISTER
+			      </a>
+		      </li>
+		      <li class="nav-item">
+		      	<a class="nav-link link display-4" href="#sponsor">
+		      		SPONSORS
+		     		</a>
+		      </li>
+		     </ul>
 		</div>
 	    </nav>
 	</section>
@@ -675,7 +686,7 @@ footer p{
 		  background-repeat: no-repeat;
 		  right: 0px;
 		  bottom: 0px;
-		  z-index: 5000;
+		  z-index: 5;
 		  filter: alpha(opacity=25) progid:DXImageTransform.Microsoft.Alpha(opacity=25);">
 	    </footer>
 	</section>
@@ -1207,109 +1218,28 @@ footer p{
   <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
 
-  <script type="text/jquery">
-		$(document).ready(function(){
 
-		// Scrollspy initiation
-		$('body').scrollspy({ 
-			target: '#scroll-spy',
-			offset: 70
-		});
-
-		// On render, adjust body padding to ensure last Scroll target can reach top of screen
-		var height = $('#howto').innerHeight();
-		var windowHeight = $(window).height();
-		var navHeight = $('nav.navbar').innerHeight();
-		var siblingHeight = $('#howto').nextAll().innerHeight();
-
-
-		if(height < windowHeight){
-			$('body').css("padding-bottom", windowHeight-navHeight-height-siblingHeight + "px");
-		}
-
-		// On window resize, adjust body padding to ensure last Scroll target can reach top of screen
-		$(window).resize(function(event){
-			var height = $('#howto').innerHeight();
-			var windowHeight = $(window).height();
-			var navHeight = $('nav.navbar').innerHeight();
-			var siblingHeight = $('#howto').nextAll().innerHeight();
-			
-			
-			if(height < windowHeight){
-				$('body').css("padding-bottom", windowHeight-navHeight-height-siblingHeight + "px");
-			}
-		});
-
-		$('nav.navbar a, .scrollTop').click(function(event){
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-				// Prevent default anchor click behavior
-				event.preventDefault();
-
-				// Store hash (#)
-				var hash = this.hash;
-				
-				// Ensure no section has relevant class
-				$('section').removeClass("focus");
-
-				// Add class to target
-				$(hash).addClass("focus");
-
-				// Remove thy class after timeout
-				setTimeout(function(){
-					$(hash).removeClass("focus");
-				}, 2000);			
-				
-		// Using jQuery's animate() method to add smooth page scroll
-		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top - 69
-				}, 600, function(){
-					
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;				
-				});
-						
-				// Collapse Navbar for mobile view
-				$(".navbar-collapse").collapse('hide');			
-			}
-
-		});
-		$(window).scroll(function(){
-			var scrollPos = $('body').scrollTop();
-			if(scrollPos > 0){
-				$('.navbar').addClass('show-color');
-				$('.scrollTop').addClass('show-button');
-        
-			} else{
-				$('.navbar').removeClass('show-color');
-				$('.scrollTop').removeClass('show-button');
-			}
-			
-		});
-		});
-  </script>
   <script type="text/javascript">
   
      var h = $(window).height() ;
-  $(window).scroll(function(){
-    var scrp = $(window).scrollTop() ;
- 
-   if(scrp > 0){
-   
-    $('.navi').attr("src","assets/images/received_1383084245168692.png");
-     $('.variable').attr("href","index.html");
-        $('.navg').css("display","none");
-   }
-   else{
-     $('.navi').attr("src","assets/images/iiit-logo-transparent.gif");
-     $('.variable').attr("href","https://www.iiita.ac.in");
-        $('.navg').css("display","block");
-   }
- });
+	  $(window).scroll(function(){
+	    var scrp = $(window).scrollTop() ;
+	 
+	   if(scrp > 0){
+	   
+	    $('.navi').attr("src","assets/images/received_1383084245168692.png");
+	     $('.variable').attr("href","#home");
+	        $('.navg').css("display","none");
+	   }
+	   else{
+	     $('.navi').attr("src","assets/images/iiit-logo-transparent.gif");
+	     $('.variable').attr("href","https://www.iiita.ac.in");
+	        $('.navg').css("display","block");
+		   }
+		 });
 
 
-</script>
+	</script>
   <script type="text/javascript">
   
      var h1 = $(window).height() ;
@@ -1320,10 +1250,9 @@ footer p{
     $('.foot').attr("align","center");
      
    }
-   
+	</script>
 
-
-</script>
+	
 </body>
 </html>
 
