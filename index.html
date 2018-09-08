@@ -244,6 +244,11 @@
 			float: right;
 		}
 
+		.pat_sponsor {
+    	width: 15vw;
+    	height: 14vw;
+		}
+
 		@media screen and (max-width: 1250px) {
 			.register-svg-image {
 				width: 12%;
@@ -378,6 +383,14 @@
 			.about-svg-image {
 				width: 30%;
 			}
+		}
+
+		.patron-row {
+			display: flex;
+		}
+
+		.Patron_item {
+			margin: auto;
 		}
 
 		.about-under-line {
@@ -561,6 +574,12 @@
 			.sponsor {
 				width: 28vw;
 			}
+
+			.pat_sponsor {
+	    	width: 28vw;
+				height: auto;
+			}
+
 			img.platinum_sponsor {
 				width: 50vw;
 			}
@@ -629,6 +648,14 @@
 
 
 		@media screen and (max-width: 950px) {
+			.patron-row {
+				display: block;
+			}
+
+			.Patron_item {
+				margin: 0;
+			}
+
 			#svg-container {
 				display: grid;
 				grid-template-columns: repeat(5, 1fr);
@@ -1044,7 +1071,7 @@
 					<div class="col-12 col-md-11">
 						<div class="media-container-row">
 						<div class="mbr-figure" style="width: 60%;">
-							<img class="article-image" src="assets/images/celdiv.jpg" alt="celdiv">
+							<img class="article-image" src="assets/images/diversity3.jpeg" alt="celdiv" style="height: 220px;width:80%!important">
 						</div>
 							<div class="media-content">
 								<div class="mbr-section-text" style="text-align: right">
@@ -1382,20 +1409,38 @@
 								<br>
 								<br>
 								<!--row for div-->
-								<div class="patron-row" style="display: flex">
-									<div class="row">
+								<div class="patron-row">
+									<div class="row Patron_item">
 										<div class="col s12" style="text-align:center">
 											<div style="text-align:center">
-												<a target="_blank" href="https://www.jetbrains.com/"><img src="assets/images/jetbrains.svg" class="sponsor"></a>
+												<a target="_blank" href="https://www.jetbrains.com/"><img src="assets/images/jetbrains.svg" class="sponsor pat_sponsor"></a>
 											</div>
 											<h3 style="color: black; font-size: 1.75rem; font-weight: 100">Patron</h3>
 										</div>
 									</div>
 
-									<div class="row" style="margin-left: auto">
+									<div class="row Patron_item">
 										<div class="col s12" style="text-align:center">
 											<div style="text-align:center">
-												<a target="_blank" href="https://girlscript.tech/"><img src="assets/images/girlscript.png" class="sponsor"></a>
+												<a target="_blank" href="https://www.bugsee.com/"><img src="assets/images/bugsee.png" class="sponsor pat_sponsor"></a>
+											</div>
+											<h3 style="color: black; font-size: 1.75rem; font-weight: 100">Patron</h3>
+										</div>
+									</div>
+
+									<div class="row Patron_item">
+										<div class="col s12" style="text-align:center">
+											<div style="text-align:center">
+												<a target="_blank" href="https://girlscript.tech/"><img src="assets/images/girlscript.png" class="sponsor pat_sponsor"></a>
+											</div>
+											<h3 style="color: black; font-size: 1.75rem; font-weight: 100">Patron</h3>
+										</div>
+									</div>
+
+									<div class="row Patron_item">
+										<div class="col s12" style="text-align:center">
+											<div style="text-align:center">
+												<a target="_blank" href="http://www.wolframalpha.com/"><img src="assets/images/share.png" class="sponsor pat_sponsor"></a>
 											</div>
 											<h3 style="color: black; font-size: 1.75rem; font-weight: 100">Patron</h3>
 										</div>
