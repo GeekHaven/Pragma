@@ -20431,6 +20431,16 @@ h5,
 	bottom: 0
 }
 
+.date-color{
+	background: -webkit-gradient(linear, left top, right top, from(#c70039), color-stop(70%, #ff5733));
+    background: -webkit-linear-gradient(left, #c70039, #ff5733 70%);
+    background: -o-linear-gradient(left, #c70039, #ff5733 70%);
+    background: linear-gradient(to right, #c70039, #ff5733 70%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+}
+
 .site-navbar .site-navigation .site-menu a {
 	text-decoration: none!important;
 	display: inline-block;
