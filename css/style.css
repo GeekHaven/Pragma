@@ -21170,6 +21170,24 @@ h5,
 	max-width: 40%;
 }
 
+.speaker-container{
+	margin-bottom: 70px;
+}
+
+.speaker-container img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.speaker-container h2, .speaker-container .orange{
+	color: #ff5733;
+}
+
+.speaker-container h3{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
 @media (max-width:768px) {
 	.sponsors-wrapper .sponsor-wrapper div{
 		margin-bottom: 50px;
