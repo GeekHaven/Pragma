@@ -21144,3 +21144,53 @@ h5,
 	height: 40px;
 	line-height: 40px
 }
+
+.sponsors-wrapper .sponsor-wrapper{
+	justify-content: center;
+}
+
+.sponsors-wrapper .sponsor-wrapper div{
+	text-align: center;
+	margin-bottom: 70px;
+} 
+
+.wrapper-1 div{
+	max-width: 70%;
+}
+.wrapper-2 div{
+	max-width: 60%;
+}
+.wrapper-3 div{
+	max-width: 50%;
+}
+.wrapper-4 div{
+	max-width: 40%;
+}
+.wrapper-5 div{
+	max-width: 40%;
+}
+
+@media (max-width:768px) {
+	.sponsors-wrapper .sponsor-wrapper div{
+		margin-bottom: 50px;
+	}
+	.wrapper-1 div{
+		max-width: 100%;
+	}
+	.wrapper-2 div{
+		max-width: 100%;
+	}
+	.wrapper-3 div{
+		max-width: 100%;
+	}
+	.wrapper-4 div{
+		max-width: 100%;
+	}
+	.wrapper-5 div{
+		max-width: 100%;
+	}
+}
+
+.sponsors-wrapper .sponsor-wrapper div img{
+	width: 100%;
+} 
