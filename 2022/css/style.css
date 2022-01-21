@@ -233,6 +233,10 @@ Common
 .btn-hero:hover {
   background: #111111;
   border-color: #111111;
+  background: #00ff84;
+  background: #c1dd25;
+  border-color: #00ff84;
+  border-color: #c1dd25;
   color: #ffffff;
 }
 
@@ -244,8 +248,10 @@ Common
 
 .btn-secondary:hover {
   background: transparent;
+  background: #c1dd25;
   color: #111111;
   border-color: #4125dd;
+  border-color: #c1dd25;
 }
 
 .btn-gray {
@@ -299,6 +305,9 @@ header
   font-weight: 700;
   color: #4125dd;
 }
+.navbar{
+  background-color: #1B273D;
+}
 
 .sticky {
   position: fixed;
@@ -308,6 +317,11 @@ header
 
 .main-nav {
   transition: all 0.7s linear;
+}
+
+.tf-ion-android-menu{
+  color: #e8e8e8;
+  font-size: 30px;
 }
 
 /* nav ul li a {
@@ -395,6 +409,7 @@ nav ul li a:hover {
 }
 nav ul li a:hover:after {
   z-index: -10;
+  
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
@@ -418,19 +433,23 @@ nav ul li a:hover:after {
   }
 }
 
-.home-class {
-  background: #eee;
-}
-
 .main-nav .nav-link {
   font-size: 14px;
   padding: 7px 14px !important;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #111111;
+  color: #9ba6bb;
+  /* color: #c1dd25; */
+  color: rgb(255, 0, 122);
   opacity: 0.9;
 }
+
+.main-nav .nav-link.home-class {
+  background: #eee;
+  color: #111111;
+}
+
 
 .btn-sm {
   padding: 5px 18px;
@@ -625,8 +644,8 @@ About
 .about-img .img-block {
   position: absolute;
   content: "";
-  bottom: -70px;
-  right: 0px;
+  bottom: -33px;
+  right: -77px;
   left: 30%;
 
   /* border: 10px solid white; */
@@ -1498,9 +1517,11 @@ Blog
 footer
 -------------------------------*/
 .footer {
-  background: url("../images/bg/footer-bg.jpg") no-repeat;
+  background: url("../images/bg/footer-bg.jpg");
   background-image: cover;
   padding-bottom: 35px;
+  width: 100%;
+  height: auto;
 }
 
 .footer-socails a {
@@ -1514,6 +1535,10 @@ footer
 
 .copy.border-top {
   border-top: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+.quickLink:hover{
+  color: #ff007a !important;
 }
 
 @media (max-width: 480px) {
@@ -1612,6 +1637,8 @@ IIITA
 }
 .profile-img {
   width: 100%;
+  height: 25rem;
+  object-fit: cover;
 }
 
 .hide {
@@ -1865,4 +1892,12 @@ IIITA
 
 .brand-container {
   margin-right: 5rem;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 0px;
 }
