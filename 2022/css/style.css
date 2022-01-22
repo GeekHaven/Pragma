@@ -225,33 +225,48 @@ Common
 }
 
 .btn-hero {
-  background: #ff007a;
+  background: #8500ff;
   color: #ffffff;
-  border-color: #ff007a;
+  border-color: #8500ff;
 }
 
 .btn-hero:hover {
-  background: #111111;
-  border-color: #111111;
-  background: #00ff84;
-  background: #c1dd25;
-  border-color: #00ff84;
-  border-color: #c1dd25;
-  color: #ffffff;
+  /* background: #111111; */
+  /* border-color: #111111; */
+  /* background: #00ff84; */
+  /* background: #c1dd25; */
+  /* background-color: #7aff00; */
+  /* background-color: #007aff; */
+  /* border-color: #00ff84; */
+  /* border-color: #c1dd25; */
+  /* border-color: #7aff00; */
+  /* border-color: #007aff; */
+  /* color: #111111; */
+  color: white;
+  background: transparent;
+  border-color: #8500ff;
 }
 
 .btn-secondary {
-  background: #4125dd;
-  border-color: #4125dd;
+  background: #8500ff;
+  border-color: #8500ff;
   color: #ffffff;
 }
 
 .btn-secondary:hover {
+  /* background: transparent; */
+  /* background: #c1dd25; */
+  /* background-color: #7aff00; */
+  /* background-color: #007aff; */
+  /* color: #111111; */
+  /* border-color: #4125dd; */
+  /* border-color: #c1dd25; */
+  /* border-color: #7aff00; */
+  /* border-color: #007aff; */
+  /* border-color: #8500ff; */
+  color: white;
   background: transparent;
-  background: #c1dd25;
-  color: #111111;
-  border-color: #4125dd;
-  border-color: #c1dd25;
+  border-color: #8500ff;
 }
 
 .btn-gray {
@@ -306,7 +321,7 @@ header
   color: #4125dd;
 }
 .navbar{
-  background-color: #1B273D;
+  /* background-color: #1B273D; */
 }
 
 .sticky {
@@ -316,7 +331,10 @@ header
 }
 
 .main-nav {
-  transition: all 0.7s linear;
+  /* transition: all 0.7s linear; */
+      transition: all 0.7s linear;
+    /* margin-top: 1rem; */
+    padding-top: 2.2rem;
 }
 
 .tf-ion-android-menu{
@@ -446,10 +464,15 @@ nav ul li a:hover:after {
 }
 
 .main-nav .nav-link.home-class {
-  background: #eee;
-  color: #111111;
+  /* background: #eee; */
+  background: transparent;
+  /* color: #111111; */
+  color: white;
 }
 
+.main-nav .nav-link.home-class:hover {
+  color: rgb(255, 0, 122);
+}
 
 .btn-sm {
   padding: 5px 18px;
@@ -574,7 +597,7 @@ banner
 .section-banner {
   min-height: 700px;
   position: relative;
-  background: #eee;
+  /* background: #eee; */
   background-repeat: no-repeat;
   background-position: 65% 50%;
   background-size: cover;
