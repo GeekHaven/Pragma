@@ -1924,3 +1924,96 @@ IIITA
   justify-content: space-between;
   margin: auto 0px;
 }
+
+
+/* .time .container { */
+  /* display: flex !important; */
+  /* flex-direction: row !important; */
+/* } */
+
+.counter-stat {
+  width: 70vw;
+    display: flex;
+    flex-direction: row;
+    /* gap: 15rem; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+
+.my-timer {
+      display: flex !important;
+    flex-direction: row;
+    width: 85vw !important;
+    
+}
+
+#timer {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  /* font-size: 40px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  font-size: 1rem;
+      align-items: center;
+    justify-content: center;
+}
+
+#timer span {
+  display: block;
+  font-size: 1.2rem;
+  /* color: white; */
+  color: #a4a4a4;
+      text-transform: capitalize;
+}
+
+#days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ff007a;
+  line-height: 45px;
+}
+#hours {
+   display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+  font-size: 5rem;
+  font-weight: 800;
+  color: black;
+  line-height: 45px;
+}
+#minutes {
+   display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+  font-size: 5rem;
+font-weight: 800;
+color: black;
+line-height: 45px;
+}
+#seconds {
+   display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+  font-size: 5rem;
+font-weight: 800;
+color: black;
+line-height: 45px;
+  
+}
+

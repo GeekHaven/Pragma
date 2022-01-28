@@ -50,9 +50,49 @@
     year: 2022,
     month: 3,
     day: 14,
-    hour: 12,
+    hour: 0,
     minute: 0,
   });
+
+  // function init() {
+    // console.log("hello");
+// 
+    // const $timer = $("#simple-timer");
+    // const $countdown = $("#countdown");
+// 
+    // let timeRemaining = 30;
+    // let timerOn = false;
+    // let timerId = null; //null is the same as false
+// 
+    // function countDownLogic() {
+      // if (timeRemaining > 0) {
+        // --timeRemaining;
+        // $countdown.html(timeRemaining);
+        // console.log("start timer");
+// 
+        // IF COUNTDOWN HITS ZERO
+        // if (timeRemaining === 0) {
+          // $play.classList.remove('hide');
+          // console.log("time ends");
+        // } else {
+          // console.log("false");
+        // }
+      // } else {
+        // timerOn = false;
+        // clearInterval(timerId);
+      // }
+// 
+      // $timer.html("PLAY AGAIN!");
+    // }
+// 
+    // $play.on("click", () => {
+      // if (!timerOn) {
+        // timerOn = true;
+        // timerId = setInterval(countDownLogic, 1000);
+      // }
+    // });
+  // }
+  // $(init);
 
   $(document).ready(function () {
     $("#contact-form").validate({
@@ -219,3 +259,6 @@ faders.forEach((fader) => {
 
 	<script src="slideIn.min.js"></script> */
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
