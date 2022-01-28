@@ -1937,7 +1937,7 @@ IIITA
     flex-direction: row;
     /* gap: 15rem; */
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-around;
     
 }
