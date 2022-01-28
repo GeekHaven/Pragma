@@ -1932,7 +1932,7 @@ IIITA
 /* } */
 
 .counter-stat {
-  width: 70vw;
+  width: 75vw;
     display: flex;
     flex-direction: row;
     /* gap: 15rem; */
