@@ -320,9 +320,9 @@ header
   font-weight: 700;
   color: #4125dd;
 }
-.navbar{
-  /* background-color: #1B273D; */
-}
+/*.navbar {
+  /* background-color: #1B273D; 
+}*/
 
 .sticky {
   position: fixed;
@@ -332,12 +332,12 @@ header
 
 .main-nav {
   /* transition: all 0.7s linear; */
-      transition: all 0.7s linear;
-    /* margin-top: 1rem; */
-    padding-top: 2.2rem;
+  transition: all 0.7s linear;
+  /* margin-top: 1rem; */
+  padding-top: 2.2rem;
 }
 
-.tf-ion-android-menu{
+.tf-ion-android-menu {
   color: #e8e8e8;
   font-size: 30px;
 }
@@ -427,7 +427,7 @@ nav ul li a:hover {
 }
 nav ul li a:hover:after {
   z-index: -10;
-  
+
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
@@ -867,7 +867,7 @@ Features
 
 .pl-90 {
   padding-left: 150px;
-  margin-top: 100px;
+  margin-top: 25px;
 }
 
 .heading h2 {
@@ -1285,7 +1285,18 @@ Sponsors
   opacity: 1;
   background: #111111;
 }
-
+.godaddy {
+  vertical-align: middle;
+  height: 100px;
+  padding-top: 25px;
+  width: 200px;
+}
+.godaddy-design {
+  vertical-align: middle;
+  height: 100px;
+  padding-top: 25px;
+  margin-left: 12px;
+}
 @media (max-width: 991px) {
   .client-item {
     width: 20%;
@@ -1309,7 +1320,40 @@ Sponsors
     width: 50%;
   }
 }
-
+@media (max-width: 532px) {
+  .godaddy-design {
+    width: 210px;
+  }
+}
+@media (max-width: 475px) {
+  .godaddy-design {
+    width: 160px;
+  }
+}
+@media (max-width: 423px) {
+  .godaddy-design {
+    width: 140px;
+  }
+}
+@media (max-width: 403px) {
+  .godaddy-design {
+    width: 120px;
+  }
+}
+@media (max-width: 390px) {
+  .godaddy-design {
+    width: 100px;
+  }
+}
+@media (max-width: 362px) {
+  .godaddy {
+    width: 180px;
+  }
+  .godaddy-design {
+    padding-top: 0;
+    width: 80px;
+  }
+}
 .bg-black {
   background: #000;
 }
@@ -1560,7 +1604,7 @@ footer
   border-top: 1px solid rgba(255, 255, 255, 0.04) !important;
 }
 
-.quickLink:hover{
+.quickLink:hover {
   color: #ff007a !important;
 }
 
@@ -1925,28 +1969,25 @@ IIITA
   margin: auto 0px;
 }
 
-
 /* .time .container { */
-  /* display: flex !important; */
-  /* flex-direction: row !important; */
+/* display: flex !important; */
+/* flex-direction: row !important; */
 /* } */
 
 .counter-stat {
   width: 75vw;
-    display: flex;
-    flex-direction: row;
-    /* gap: 15rem; */
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
-    
+  display: flex;
+  flex-direction: row;
+  /* gap: 15rem; */
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
 }
 
 .my-timer {
-      display: flex !important;
-    flex-direction: row;
-    width: 85vw !important;
-    
+  display: flex !important;
+  flex-direction: row;
+  width: 85vw !important;
 }
 
 #timer {
@@ -1959,8 +2000,8 @@ IIITA
   flex-wrap: wrap;
   gap: 4rem;
   font-size: 1rem;
-      align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #timer div {
@@ -1972,7 +2013,7 @@ IIITA
   font-size: 1.2rem;
   /* color: white; */
   color: #a4a4a4;
-      text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #days {
@@ -1987,38 +2028,37 @@ IIITA
   line-height: 45px;
 }
 #hours {
-   display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   font-size: 5rem;
   font-weight: 800;
   color: black;
   line-height: 45px;
 }
 #minutes {
-   display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   font-size: 5rem;
-font-weight: 800;
-color: black;
-line-height: 45px;
+  font-weight: 800;
+  color: black;
+  line-height: 45px;
 }
 #seconds {
-   display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   font-size: 5rem;
-font-weight: 800;
-color: black;
-line-height: 45px;
-  
+  font-weight: 800;
+  color: black;
+  line-height: 45px;
 }
 
 @media (max-width: 600px) {
