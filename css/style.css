@@ -1285,17 +1285,8 @@ Sponsors
   opacity: 1;
   background: #111111;
 }
-.godaddy {
-  vertical-align: middle;
-  height: 100px;
-  padding-top: 25px;
-  width: 200px;
-}
-.godaddy-design {
-  vertical-align: middle;
-  height: 100px;
-  padding-top: 25px;
-  margin-left: 12px;
+.godaddy_img {
+  height: 200px;
 }
 @media (max-width: 991px) {
   .client-item {
@@ -1320,38 +1311,12 @@ Sponsors
     width: 50%;
   }
 }
-@media (max-width: 532px) {
-  .godaddy-design {
-    width: 210px;
-  }
-}
-@media (max-width: 475px) {
-  .godaddy-design {
-    width: 160px;
-  }
-}
-@media (max-width: 423px) {
-  .godaddy-design {
-    width: 140px;
-  }
-}
-@media (max-width: 403px) {
-  .godaddy-design {
-    width: 120px;
-  }
-}
-@media (max-width: 390px) {
-  .godaddy-design {
-    width: 100px;
-  }
-}
-@media (max-width: 362px) {
+@media (max-width: 768px) {
   .godaddy {
-    width: 180px;
+    flex-direction: column-reverse;
   }
-  .godaddy-design {
-    padding-top: 0;
-    width: 80px;
+  .godaddy_img {
+    height: 100px;
   }
 }
 .bg-black {
